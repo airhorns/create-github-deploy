@@ -1,28 +1,22 @@
-# Create::Github::Deploy
+# `create-github-deploy`
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/create/github/deploy`. To experiment with that code, run `bin/console` for an interactive prompt.
+Provides a binary, `create-github-deploy`, which will interact with the (Github Deployments API)[https://developer.github.com/v3/repos/deployments/] for you in deploy scripts.
 
-TODO: Delete this and the text above, and describe your gem
+You can use this to:
+ - trigger deploys run by a different thing listening to Github Deployments
+ - or, trigger a deploy, and then update it's status as you deploy from the same script. If you are running deploys in a simple way in one script or something like that, you can use this to create a deployment, and then update the status of it without needing to deploy multiple components.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'create-github-deploy'
 ```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install create-github-deploy
+$ gem install create-github-deploy
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+TODO
 
 ## Development
 
